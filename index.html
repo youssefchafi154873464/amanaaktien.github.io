@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amana Aktien – Halal Investieren auf Deutsch</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF8;
+  --white: #FFFFFF;
+  --black: #0F0F0F;
+  --dark: #1A1A1A;
+  --text: #1A1A1A;
+  --text2: #4A4A4A;
+  --muted: #888;
+  --border: #E5E5E0;
+  --gold: #B8860B;
+  --gold2: #D4A017;
+  --gold-bg: #FDF8EC;
+  --gold-border: #E8D48A;
+  --green: #166534;
+  --green-bg: #F0FDF4;
+  --green-border: #BBF7D0;
+  --blue: #1E3A5F;
+  --blue-bg: #EFF6FF;
+  --blue-border: #BFDBFE;
+  --red: #991B1B;
+  --red-bg: #FEF2F2;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* ── TOP BAR ── */
+.topbar {
+  background: var(--dark);
+  color: #ccc;
+  font-size: 0.72rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 0.04em;
+}
+.topbar-left { display:flex; gap:1.5rem; }
+.topbar-link { color:#ccc; transition:color 0.2s; }
+.topbar-link:hover { color: var(--gold2); }
+.topbar-right { display:flex; gap:1rem; align-items:center; }
+.topbar-social { color:#aaa; font-size:0.8rem; transition:color 0.2s; }
+.topbar-social:hover { color:var(--gold2); }
+
+/* ── NAV ── */
+nav {
+  background: var(--white);
+  border-bottom: 2px solid var(--black);
+  position: sticky; top:0; z-index:100;
+}
+.nav-inner {
+  max-width: 1280px; margin:0 auto;
+  padding: 0 2rem;
+  display:flex; align-items:stretch; justify-content:space-between;
+}
+.nav-brand {
+  display:flex; flex-direction:column; justify-content:center;
+  padding: 0.75rem 0;
+  border-right: 1px solid var(--border);
+  padding-right: 2rem; margin-right: 2rem;
+}
+.brand-title {
+  font-family: 'Lora', serif;
+  font-size: 1.35rem; font-weight:700;
+  letter-spacing: 0.05em;
+  color: var(--black);
+  line-height:1;
+}
+.brand-sub {
+  font-size: 0.6rem; font-weight:600;
+  letter-spacing: 0.2em; text-transform:uppercase;
+  color: var(--gold); margin-top:2px;
+}
+.nav-cats {
+  display:flex; align-items:stretch; gap:0; list-style:none; flex:1;
+}
+.nav-cats li a {
+  display:flex; align-items:center;
+  padding: 0 1.1rem;
+  font-size: 0.8rem; font-weight:600;
+  letter-spacing:0.04em;
+  color: var(--text2);
+  border-bottom: 3px solid transparent;
+  height:100%;
+  transition: all 0.2s;
+}
+.nav-cats li a:hover { color:var(--black); border-bottom-color: var(--black); }
+.nav-cats li a.active { color:var(--black); border-bottom-color: var(--gold); }
+.nav-right {
+  display:flex; align-items:center; gap:0.75rem;
+  padding: 0.75rem 0;
+}
+.btn-sm {
+  padding: 0.45rem 1rem;
+  font-size: 0.75rem; font-weight:700;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  cursor:pointer; border:none;
+  transition: all 0.2s;
+}
+.btn-outline-dark {
+  background:transparent; border:1.5px solid var(--black);
+  color:var(--black);
+}
+.btn-outline-dark:hover { background:var(--black); color:var(--white); }
+.btn-gold {
+  background: var(--gold);
+  color: var(--white);
+}
+.btn-gold:hover { background: var(--gold2); }
+
+/* ── HERO STRIP ── */
+.hero-strip {
+  background: var(--black);
+  color: var(--white);
+  padding: 4rem 2rem 3rem;
+  text-align:center;
+  border-bottom: 4px solid var(--gold);
+}
+.hero-strip .eyebrow {
+  font-size:0.7rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase;
+  color: var(--gold2); margin-bottom:1rem;
+  display:flex; align-items:center; justify-content:center; gap:0.75rem;
+}
+.hero-strip .eyebrow::before, .hero-strip .eyebrow::after {
+  content:''; display:block; width:30px; height:1px; background:var(--gold);
+}
+.hero-strip h1 {
+  font-family:'Lora', serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight:700; line-height:1.2;
+  margin-bottom:1rem;
+}
+.hero-strip h1 em { font-style:italic; color: var(--gold2); }
+.hero-strip p {
+  font-size:1rem; color:#aaa; max-width:560px; margin:0 auto 2rem; line-height:1.7;
+}
+.hero-btns { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+.btn-hero-primary {
+  background: var(--gold);
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  border-radius:4px;
+  font-weight:700; font-size:0.85rem;
+  letter-spacing:0.05em;
+  transition: all 0.2s;
+  display:inline-block;
+}
+.btn-hero-primary:hover { background:var(--gold2); transform:translateY(-1px); }
+.btn-hero-secondary {
+  background:transparent;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  color:#ddd;
+  padding: 0.8rem 2rem;
+  border-radius:4px;
+  font-weight:600; font-size:0.85rem;
+  transition: all 0.2s;
+  display:inline-block;
+}
+.btn-hero-secondary:hover { border-color:#fff; color:#fff; }
+
+/* ── STAT BAR ── */
+.stat-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  display:flex; align-items:center; justify-content:center; gap:3rem; flex-wrap:wrap;
+}
+.stat-item { text-align:center; }
+.stat-num { font-family:'Lora',serif; font-size:1.4rem; font-weight:700; color:var(--black); }
+.stat-label { font-size:0.65rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); }
+.stat-divider { width:1px; height:36px; background:var(--border); }
+
+/* ── LAYOUT ── */
+.main-wrap {
+  max-width:1280px; margin:0 auto;
+  padding: 2.5rem 2rem;
+  display:grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2.5rem;
+}
+
+/* ── SECTION HEADER ── */
+.section-header {
+  display:flex; align-items:baseline; justify-content:space-between;
+  border-bottom: 2px solid var(--black);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+.section-header h2 {
+  font-family:'Lora', serif;
+  font-size:1.2rem; font-weight:700;
+}
+.section-header a {
+  font-size:0.75rem; font-weight:600; color:var(--gold);
+  letter-spacing:0.04em;
+}
+.section-header a:hover { text-decoration:underline; }
+
+/* ── FEATURED ARTICLE ── */
+.featured-article {
+  display:grid; grid-template-columns:1fr 1fr; gap:0;
+  border: 1px solid var(--border);
+  border-radius:4px; overflow:hidden;
+  margin-bottom:1.5rem;
+  transition: box-shadow 0.2s;
+  background:var(--white);
+}
+.featured-article:hover { box-shadow:0 4px 20px rgba(0,0,0,0.08); }
+.featured-thumb {
+  background: var(--dark);
+  display:flex; align-items:center; justify-content:center;
+  font-size:4rem; aspect-ratio:4/3;
+  position:relative;
+}
+.featured-thumb .play-btn {
+  position:absolute;
+  width:48px; height:48px;
+  background: rgba(184,134,11,0.9);
+  border-radius:50%;
+  display:grid; place-items:center;
+  font-size:1rem; color:#fff;
+  padding-left:3px;
+}
+.featured-body { padding:1.75rem; display:flex; flex-direction:column; }
+.art-category {
+  font-size:0.65rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;
+  padding:0.25rem 0.6rem; border-radius:3px;
+  display:inline-block; margin-bottom:0.75rem; width:fit-content;
+}
+.cat-etf { background:var(--blue-bg); color:var(--blue); border:1px solid var(--blue-border); }
+.cat-aktie { background:var(--gold-bg); color:var(--gold); border:1px solid var(--gold-border); }
+.cat-halal { background:var(--green-bg); color:var(--green); border:1px solid var(--green-border); }
+.cat-grundlagen { background:#F5F0FF; color:#5B21B6; border:1px solid #DDD6FE; }
+
+.featured-body h3 {
+  font-family:'Lora', serif;
+  font-size:1.3rem; font-weight:700; line-height:1.35;
+  margin-bottom:0.75rem;
+  color:var(--black);
+}
+.featured-body p { font-size:0.875rem; color:var(--text2); line-height:1.7; flex:1; margin-bottom:1.25rem; }
+.art-meta {
+  display:flex; align-items:center; gap:1rem;
+  font-size:0.72rem; color:var(--muted);
+  border-top:1px solid var(--border); padding-top:1rem;
+}
+.art-meta-views { display:flex; align-items:center; gap:0.3rem; }
+.read-link { margin-left:auto; font-size:0.75rem; font-weight:700; color:var(--gold); }
+.read-link:hover { text-decoration:underline; }
+
+/* ── ARTICLE LIST ── */
+.article-list { display:flex; flex-direction:column; gap:1px; background:var(--border); border:1px solid var(--border); border-radius:4px; overflow:hidden; margin-bottom:2rem; }
+.article-row {
+  background:var(--white);
+  display:grid; grid-template-columns:80px 1fr auto;
+  align-items:center; gap:1rem;
+  padding:1rem 1.25rem;
+  transition: background 0.15s;
+  cursor:pointer;
+}
+.article-row:hover { background:#FAFAF8; }
+.art-thumb-sm {
+  width:80px; height:55px;
+  background:var(--dark);
+  border-radius:3px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.6rem;
+  flex-shrink:0;
+}
+.art-info h4 {
+  font-size:0.88rem; font-weight:600; line-height:1.4;
+  color:var(--black); margin-bottom:0.3rem;
+}
+.art-info-meta { font-size:0.7rem; color:var(--muted); display:flex; gap:0.75rem; }
+.art-views { font-size:0.7rem; color:var(--muted); white-space:nowrap; }
+
+/* ── CATEGORIES GRID ── */
+.categories-grid {
+  display:grid; grid-template-columns:repeat(2,1fr); gap:1rem;
+  margin-bottom:2rem;
+}
+.cat-card {
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:4px; padding:1.25rem;
+  display:flex; flex-direction:column; gap:0.5rem;
+  transition: all 0.2s;
+  cursor:pointer;
+}
+.cat-card:hover { border-color:var(--gold); transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,0,0,0.06); }
+.cat-card-icon { font-size:1.5rem; }
+.cat-card-count { font-size:0.65rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); }
+.cat-card-name { font-size:0.9rem; font-weight:700; color:var(--black); }
+.cat-card-desc { font-size:0.75rem; color:var(--text2); line-height:1.5; }
+
+/* ── SIDEBAR ── */
+.sidebar { display:flex; flex-direction:column; gap:1.5rem; }
+
+/* sidebar widget */
+.widget {
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:4px;
+  overflow:hidden;
+}
+.widget-head {
+  background:var(--black);
+  color:var(--white);
+  padding:0.7rem 1.25rem;
+  font-family:'Lora',serif;
+  font-size:0.9rem; font-weight:700;
+}
+.widget-body { padding:1.25rem; }
+
+/* premium widget */
+.premium-widget { background:linear-gradient(135deg, #1a1a1a, #2d2010); color:#fff; border:none; }
+.premium-widget .widget-head { background:rgba(255,255,255,0.08); }
+.premium-badge {
+  display:inline-flex; align-items:center; gap:0.4rem;
+  background:rgba(184,134,11,0.2); border:1px solid rgba(184,134,11,0.4);
+  color:var(--gold2); font-size:0.65rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;
+  padding:0.25rem 0.75rem; border-radius:2px; margin-bottom:1rem;
+}
+.premium-price {
+  font-family:'Lora',serif; font-size:2.5rem; font-weight:700;
+  color:var(--gold2); line-height:1;
+}
+.premium-period { font-size:0.75rem; color:#aaa; margin-bottom:1.25rem; }
+.premium-features { list-style:none; display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1.5rem; }
+.premium-features li { font-size:0.8rem; color:#ddd; display:flex; gap:0.6rem; }
+.check { color:var(--gold2); }
+.btn-premium-full {
+  display:block; text-align:center;
+  background:var(--gold); color:#fff;
+  padding:0.75rem; border-radius:4px;
+  font-weight:700; font-size:0.82rem;
+  letter-spacing:0.05em;
+  transition:background 0.2s;
+}
+.btn-premium-full:hover { background:var(--gold2); }
+
+/* newsletter widget */
+.newsletter-desc { font-size:0.82rem; color:var(--text2); line-height:1.6; margin-bottom:1rem; }
+.newsletter-form { display:flex; flex-direction:column; gap:0.6rem; }
+.newsletter-input {
+  width:100%; padding:0.65rem 0.9rem;
+  border:1.5px solid var(--border); border-radius:4px;
+  font-size:0.82rem; font-family:inherit;
+  outline:none; transition:border-color 0.2s;
+}
+.newsletter-input:focus { border-color:var(--gold); }
+.btn-newsletter {
+  width:100%; padding:0.65rem;
+  background:var(--black); color:#fff;
+  border:none; border-radius:4px;
+  font-weight:700; font-size:0.8rem;
+  cursor:pointer; transition:background 0.2s;
+  font-family:inherit;
+}
+.btn-newsletter:hover { background:var(--dark); }
+.newsletter-note { font-size:0.65rem; color:var(--muted); text-align:center; }
+
+/* social widget */
+.social-list { list-style:none; display:flex; flex-direction:column; gap:0.6rem; }
+.social-item-row {
+  display:flex; align-items:center; gap:0.75rem;
+  padding:0.6rem 0.75rem;
+  border:1px solid var(--border); border-radius:4px;
+  font-size:0.82rem; font-weight:600;
+  transition:all 0.2s; color:var(--text);
+}
+.social-item-row:hover { border-color:var(--gold); color:var(--gold); }
+.s-ico { width:28px; height:28px; border-radius:4px; display:grid; place-items:center; font-size:0.9rem; flex-shrink:0; }
+
+/* playlist widget */
+.playlist-items { display:flex; flex-direction:column; gap:0; }
+.playlist-row {
+  display:flex; align-items:center; gap:0.75rem;
+  padding:0.75rem 0;
+  border-bottom:1px solid var(--border);
+  cursor:pointer; transition:all 0.15s;
+}
+.playlist-row:last-child { border-bottom:none; }
+.playlist-row:hover .pl-name { color:var(--gold); }
+.pl-icon { font-size:1.2rem; width:32px; text-align:center; flex-shrink:0; }
+.pl-name { font-size:0.82rem; font-weight:600; color:var(--text); line-height:1.3; }
+.pl-count { font-size:0.68rem; color:var(--muted); }
+.pl-arrow { margin-left:auto; color:var(--muted); font-size:0.8rem; }
+
+/* ── FULL WIDTH SECTIONS ── */
+.full-section { background:var(--white); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:3rem 2rem; margin:2rem 0; }
+.full-section-inner { max-width:1280px; margin:0 auto; }
+
+/* ── HALAL CHECK SECTION ── */
+.halal-table {
+  width:100%; border-collapse:collapse; margin-top:1.5rem;
+  font-size:0.85rem;
+}
+.halal-table th {
+  background:var(--black); color:#fff;
+  padding:0.75rem 1rem; text-align:left;
+  font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase;
+}
+.halal-table td {
+  padding:0.75rem 1rem;
+  border-bottom:1px solid var(--border);
+}
+.halal-table tr:last-child td { border-bottom:none; }
+.halal-table tr:nth-child(even) td { background:#FAFAF8; }
+.badge-ok { background:var(--green-bg); color:var(--green); border:1px solid var(--green-border); padding:0.2rem 0.6rem; border-radius:3px; font-size:0.68rem; font-weight:700; }
+.badge-warn { background:#FFF7ED; color:#C2410C; border:1px solid #FED7AA; padding:0.2rem 0.6rem; border-radius:3px; font-size:0.68rem; font-weight:700; }
+.badge-check { background:var(--blue-bg); color:var(--blue); border:1px solid var(--blue-border); padding:0.2rem 0.6rem; border-radius:3px; font-size:0.68rem; font-weight:700; }
+
+/* ── NEWSLETTER BIG ── */
+.newsletter-big {
+  background:var(--black);
+  color:#fff;
+  padding: 4rem 2rem;
+  text-align:center;
+  border-top: 4px solid var(--gold);
+}
+.newsletter-big h2 {
+  font-family:'Lora',serif; font-size:clamp(1.6rem,3vw,2.2rem); font-weight:700; margin-bottom:0.75rem;
+}
+.newsletter-big p { color:#aaa; font-size:0.95rem; margin-bottom:2rem; }
+.newsletter-big-form {
+  display:flex; gap:0.75rem; max-width:460px; margin:0 auto 1rem;
+}
+.newsletter-big-input {
+  flex:1; padding:0.8rem 1rem;
+  border:1.5px solid rgba(255,255,255,0.2); border-radius:4px;
+  background:rgba(255,255,255,0.05); color:#fff;
+  font-size:0.85rem; font-family:inherit; outline:none;
+}
+.newsletter-big-input::placeholder { color:#666; }
+.newsletter-big-input:focus { border-color:var(--gold); }
+.btn-nl-submit {
+  background:var(--gold); color:#fff;
+  padding:0.8rem 1.5rem;
+  border:none; border-radius:4px;
+  font-weight:700; font-size:0.85rem;
+  cursor:pointer; transition:background 0.2s;
+  font-family:inherit; white-space:nowrap;
+}
+.btn-nl-submit:hover { background:var(--gold2); }
+.nl-note { font-size:0.7rem; color:#555; }
+
+/* ── FOOTER ── */
+footer {
+  background:#0F0F0F;
+  color:#999;
+  padding:3rem 2rem 1.5rem;
+}
+.footer-inner { max-width:1280px; margin:0 auto; }
+.footer-top {
+  display:grid; grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:2.5rem; margin-bottom:2.5rem;
+}
+.footer-brand-name {
+  font-family:'Lora',serif; font-size:1.4rem; font-weight:700; color:#fff;
+  margin-bottom:0.3rem;
+}
+.footer-brand-tagline { font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem; }
+.footer-about { font-size:0.8rem; line-height:1.7; color:#666; }
+.footer-col h5 { font-size:0.7rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#fff; margin-bottom:1rem; }
+.footer-col ul { list-style:none; display:flex; flex-direction:column; gap:0.5rem; }
+.footer-col a { font-size:0.8rem; color:#666; transition:color 0.2s; }
+.footer-col a:hover { color:var(--gold2); }
+.footer-bottom {
+  border-top:1px solid #1a1a1a;
+  padding-top:1.5rem;
+  display:flex; align-items:flex-start; justify-content:space-between;
+  flex-wrap:wrap; gap:1rem;
+}
+.footer-copy { font-size:0.72rem; color:#444; }
+.footer-disclaimer { font-size:0.68rem; color:#333; max-width:580px; line-height:1.6; }
+
+/* ── MOBILE ── */
+@media (max-width: 960px) {
+  .main-wrap { grid-template-columns:1fr; }
+  .sidebar { order:-1; }
+  .featured-article { grid-template-columns:1fr; }
+  .featured-thumb { aspect-ratio:16/9; }
+  .footer-top { grid-template-columns:1fr 1fr; }
+  .topbar { display:none; }
+  nav .nav-cats { display:none; }
+}
+@media (max-width: 640px) {
+  .stat-bar { gap:1.5rem; }
+  .stat-divider { display:none; }
+  .newsletter-big-form { flex-direction:column; }
+  .footer-top { grid-template-columns:1fr; }
+  .categories-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <span>☪️ Halal. Fundamental. Langfristig.</span>
+    <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="topbar-link">YouTube</a>
+    <a href="https://www.instagram.com/amanaaktien" target="_blank" class="topbar-link">Instagram</a>
+    <a href="https://www.tiktok.com/@amanaaktien" target="_blank" class="topbar-link">TikTok</a>
+  </div>
+  <div class="topbar-right">
+    <span>🇩🇪 Auf Deutsch · AAOIFI-Standard</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <div class="brand-title">Amana Aktien</div>
+      <div class="brand-sub">☪ Halal Investieren</div>
+    </a>
+    <ul class="nav-cats">
+      <li><a href="#etf" class="active">ETF-Analysen</a></li>
+      <li><a href="#aktien">Aktien</a></li>
+      <li><a href="#halal-check">Halal-Check</a></li>
+      <li><a href="#grundlagen">Grundlagen</a></li>
+      <li><a href="#premium">Premium</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="btn-sm btn-outline-dark">YouTube</a>
+      <a href="#premium" class="btn-sm btn-gold">Premium freischalten</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero-strip">
+  <div class="eyebrow">Neu veröffentlicht</div>
+  <h1>Halal investieren –<br><em>mit Wissen &amp; Prinzipien.</em></h1>
+  <p>Profi-Analysen für muslimische Investoren auf Deutsch. ETFs, Aktien und Halal-Checks – klar, ehrlich und scharia-konform nach AAOIFI-Standard.</p>
+  <div class="hero-btns">
+    <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="btn-hero-primary">▶ Kostenlos auf YouTube</a>
+    <a href="#premium" class="btn-hero-secondary">Premium freischalten →</a>
+  </div>
+</div>
+
+<!-- STAT BAR -->
+<div class="stat-bar">
+  <div class="stat-item">
+    <div class="stat-num">123</div>
+    <div class="stat-label">Videos</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <div class="stat-num">10+</div>
+    <div class="stat-label">ETF-Analysen</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <div class="stat-num">AAOIFI</div>
+    <div class="stat-label">Standard</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <div class="stat-num">100%</div>
+    <div class="stat-label">Halal-Fokus</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <div class="stat-num">🇩🇪</div>
+    <div class="stat-label">Auf Deutsch</div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-wrap">
+
+  <!-- LEFT COLUMN -->
+  <div>
+
+    <!-- FEATURED -->
+    <div class="section-header" id="etf">
+      <h2>ETF-Analysen</h2>
+      <a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1dGA-_hN9pqznOboSSG6SXt" target="_blank">Alle ETF-Analysen →</a>
+    </div>
+
+    <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="featured-article">
+      <div class="featured-thumb" style="background:#1a2535;">
+        🌍
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="featured-body">
+        <span class="art-category cat-etf">ETF-Analyse</span>
+        <h3>iShares MSCI World Islamic ETF – Der komplette Halal-Check 2026</h3>
+        <p>Ist der beliebteste Halal-ETF wirklich scharia-konform? Wir analysieren Kosten, Performance, Scharia-Screening und ob er als Basis-Investment geeignet ist – ehrlich und ohne Beschönigung.</p>
+        <div class="art-meta">
+          <span class="art-meta-views">👁 60 Aufrufe</span>
+          <span>12:21 Min.</span>
+          <span>20.04.2026</span>
+          <span class="read-link">Video ansehen →</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="article-list">
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="article-row">
+        <div class="art-thumb-sm" style="background:#1e3a5f;">🇺🇸</div>
+        <div class="art-info">
+          <div style="margin-bottom:0.3rem;"><span class="art-category cat-etf" style="font-size:0.6rem; padding:0.15rem 0.5rem;">ETF</span></div>
+          <h4>iShares MSCI USA Islamic ETF – Rendite, Risiko & Halal-Check 2026</h4>
+          <div class="art-info-meta"><span>👁 61 Aufrufe</span><span>8:16 Min.</span><span>20.04.2026</span></div>
+        </div>
+        <span class="art-views">→</span>
+      </a>
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="article-row">
+        <div class="art-thumb-sm" style="background:#0f2318;">💰</div>
+        <div class="art-info">
+          <div style="margin-bottom:0.3rem;"><span class="art-category cat-etf" style="font-size:0.6rem; padding:0.15rem 0.5rem;">ETF</span></div>
+          <h4>iShares $ Sukuk ETF – 5% Rendite OHNE Zinsen? Der einzige Halal-Anleihen-ETF</h4>
+          <div class="art-info-meta"><span>👁 46 Aufrufe</span><span>9:25 Min.</span><span>22.04.2026</span></div>
+        </div>
+        <span class="art-views">→</span>
+      </a>
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="article-row">
+        <div class="art-thumb-sm" style="background:#1a1205;">🌙</div>
+        <div class="art-info">
+          <div style="margin-bottom:0.3rem;"><span class="art-category cat-etf" style="font-size:0.6rem; padding:0.15rem 0.5rem;">ETF</span></div>
+          <h4>Invesco MSCI ACWI Islamic ETF (MWIM) – Globale Halal-Anlage 2026</h4>
+          <div class="art-info-meta"><span>👁 31 Aufrufe</span><span>10:46 Min.</span><span>27.04.2026</span></div>
+        </div>
+        <span class="art-views">→</span>
+      </a>
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="article-row">
+        <div class="art-thumb-sm" style="background:#1a1205;">🪙</div>
+        <div class="art-info">
+          <div style="margin-bottom:0.3rem;"><span class="art-category cat-etf" style="font-size:0.6rem; padding:0.15rem 0.5rem;">ETF</span></div>
+          <h4>iShares MSCI EM Islamic ETF – +74% in 1 Jahr: Zu gut um wahr zu sein?</h4>
+          <div class="art-info-meta"><span>👁 29 Aufrufe</span><span>10:08 Min.</span><span>22.04.2026</span></div>
+        </div>
+        <span class="art-views">→</span>
+      </a>
+    </div>
+
+    <!-- AKTIEN -->
+    <div class="section-header" id="aktien" style="margin-top:2.5rem;">
+      <h2>Aktien-Analysen</h2>
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank">Alle Aktien →</a>
+    </div>
+
+    <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="featured-article">
+      <div class="featured-thumb" style="background:#1a1a2e;">📈</div>
+      <div class="featured-body">
+        <span class="art-category cat-aktie">Aktien-Analyse</span>
+        <h3>Arista Networks – 4.387% Rendite in 10 Jahren: Kaufen oder Falle? 🔥</h3>
+        <p>Das unsichtbare Rückgrat der KI-Revolution. Giganten wie Microsoft und Meta verlassen sich auf Arista. Trotz unglaublicher Margen von 39% und 10,7 Mrd. USD Cash: Warum könnte die Aktie trotzdem gefährlich sein?</p>
+        <div class="art-meta">
+          <span class="art-meta-views">👁 70 Aufrufe</span>
+          <span>9:44 Min.</span>
+          <span>15.04.2026</span>
+          <span class="read-link">Video ansehen →</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="article-list">
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="article-row">
+        <div class="art-thumb-sm" style="background:#1c1008;">📉</div>
+        <div class="art-info">
+          <div style="margin-bottom:0.3rem;"><span class="art-category cat-aktie" style="font-size:0.6rem; padding:0.15rem 0.5rem;">Aktie</span></div>
+          <h4>Nemetschek: -50% Absturz – Die beste Halal-Chance 2026?</h4>
+          <div class="art-info-meta"><span>👁 125 Aufrufe</span><span>2:08 Min.</span><span>14.04.2026</span></div>
+        </div>
+        <span class="art-views">→</span>
+      </a>
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="article-row">
+        <div class="art-thumb-sm" style="background:#0f1f0f;">🍎</div>
+        <div class="art-info">
+          <div style="margin-bottom:0.3rem;"><span class="art-category cat-aktie" style="font-size:0.6rem; padding:0.15rem 0.5rem;">Aktie</span></div>
+          <h4>Ist Apple HALAL? Diese Zahl schockiert jeden Muslim-Investor 🍎</h4>
+          <div class="art-info-meta"><span>👁 23 Aufrufe</span><span>7:17 Min.</span><span>29.04.2026</span></div>
+        </div>
+        <span class="art-views">→</span>
+      </a>
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="article-row">
+        <div class="art-thumb-sm" style="background:#1a0f0f;">💊</div>
+        <div class="art-info">
+          <div style="margin-bottom:0.3rem;"><span class="art-category cat-aktie" style="font-size:0.6rem; padding:0.15rem 0.5rem;">Aktie</span></div>
+          <h4>Novo Nordisk – Darf man als Muslim in Wegovy/Ozempic investieren?</h4>
+          <div class="art-info-meta"><span>👁 167 Aufrufe</span><span>2:07 Min.</span><span>09.04.2026</span></div>
+        </div>
+        <span class="art-views">→</span>
+      </a>
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="article-row">
+        <div class="art-thumb-sm" style="background:#0a1a12;">🏭</div>
+        <div class="art-info">
+          <div style="margin-bottom:0.3rem;"><span class="art-category cat-aktie" style="font-size:0.6rem; padding:0.15rem 0.5rem;">Aktie</span></div>
+          <h4>5 Halal Dividendenaktien aus Deutschland – die kaum jemand kennt!</h4>
+          <div class="art-info-meta"><span>👁 42 Aufrufe</span><span>6:17 Min.</span><span>28.04.2026</span></div>
+        </div>
+        <span class="art-views">→</span>
+      </a>
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="article-row">
+        <div class="art-thumb-sm" style="background:#101520;">🖥️</div>
+        <div class="art-info">
+          <div style="margin-bottom:0.3rem;"><span class="art-category cat-aktie" style="font-size:0.6rem; padding:0.15rem 0.5rem;">Aktie</span></div>
+          <h4>ServiceNow (NOW) – 58% gefallen! Jetzt kaufen? Halal-Check 2026</h4>
+          <div class="art-info-meta"><span>👁 8 Aufrufe</span><span>11:17 Min.</span><span>01.05.2026</span></div>
+        </div>
+        <span class="art-views">→</span>
+      </a>
+    </div>
+
+    <!-- THEMEN -->
+    <div class="section-header" style="margin-top:2.5rem;">
+      <h2>Alle Themen</h2>
+    </div>
+    <div class="categories-grid">
+      <a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1dGA-_hN9pqznOboSSG6SXt" target="_blank" class="cat-card">
+        <div class="cat-card-icon">📊</div>
+        <div class="cat-card-count">10 Videos</div>
+        <div class="cat-card-name">Halal ETF-Analysen</div>
+        <div class="cat-card-desc">Scharia-konforme ETFs aus aller Welt – vollständig analysiert und bewertet.</div>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1eX9hc6LVa2fwuXfv1VgJzt" target="_blank" class="cat-card">
+        <div class="cat-card-icon">🇩🇪</div>
+        <div class="cat-card-count">5 Videos</div>
+        <div class="cat-card-name">Halal Aktien Deutschland</div>
+        <div class="cat-card-desc">Top deutsche Qualitätsunternehmen – halal, fundamental, langfristig.</div>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1eoeBZ3R-mYc_cOo1QwKJDF" target="_blank" class="cat-card">
+        <div class="cat-card-icon">🇺🇸</div>
+        <div class="cat-card-count">3 Videos</div>
+        <div class="cat-card-name">US Halal Qualitätsaktien</div>
+        <div class="cat-card-desc">Die besten amerikanischen Unternehmen im islamkonformen Depotcheck.</div>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1dJSdqS6OY7K0MNQdWUXpDy" target="_blank" class="cat-card">
+        <div class="cat-card-icon">📚</div>
+        <div class="cat-card-count">1 Video</div>
+        <div class="cat-card-name">Grundlagen</div>
+        <div class="cat-card-desc">Was bedeutet halal investieren? Alles was du als Anfänger wissen musst.</div>
+      </a>
+    </div>
+
+    <!-- HALAL CHECK TABLE -->
+    <div class="section-header" id="halal-check" style="margin-top:2.5rem;">
+      <h2>☪ Halal-Check Übersicht</h2>
+      <a href="https://www.youtube.com/@AmanaAktien" target="_blank">Alle Checks →</a>
+    </div>
+    <div style="background:var(--white); border:1px solid var(--border); border-radius:4px; overflow:auto;">
+      <table class="halal-table">
+        <thead>
+          <tr>
+            <th>Produkt</th>
+            <th>Typ</th>
+            <th>Schulden</th>
+            <th>Zinseinkommen</th>
+            <th>Ergebnis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>iShares MSCI World Islamic</strong></td>
+            <td>ETF</td>
+            <td><span class="badge-ok">✅ &lt; 33%</span></td>
+            <td><span class="badge-ok">✅ &lt; 5%</span></td>
+            <td><span class="badge-ok">✅ HALAL</span></td>
+          </tr>
+          <tr>
+            <td><strong>Arista Networks</strong></td>
+            <td>Aktie</td>
+            <td><span class="badge-ok">✅ Schuldfrei</span></td>
+            <td><span class="badge-ok">✅ &lt; 5%</span></td>
+            <td><span class="badge-ok">✅ HALAL</span></td>
+          </tr>
+          <tr>
+            <td><strong>Novo Nordisk</strong></td>
+            <td>Aktie</td>
+            <td><span class="badge-ok">✅ 24%</span></td>
+            <td><span class="badge-ok">✅ ~3%</span></td>
+            <td><span class="badge-warn">⚠️ PRÜFEN</span></td>
+          </tr>
+          <tr>
+            <td><strong>Apple</strong></td>
+            <td>Aktie</td>
+            <td><span class="badge-ok">✅ &lt; 33%</span></td>
+            <td><span class="badge-warn">⚠️ Prüfung</span></td>
+            <td><span class="badge-check">🔍 ANALYSE</span></td>
+          </tr>
+          <tr>
+            <td><strong>iShares Physical Gold ETC</strong></td>
+            <td>ETC</td>
+            <td><span class="badge-ok">✅ N/A</span></td>
+            <td><span class="badge-ok">✅ N/A</span></td>
+            <td><span class="badge-ok">✅ HALAL</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div><!-- end left col -->
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <!-- PREMIUM WIDGET -->
+    <div class="widget premium-widget" id="premium">
+      <div class="widget-head">⭐ Premium Mitgliedschaft</div>
+      <div class="widget-body">
+        <div class="premium-badge">✦ Exklusiv</div>
+        <div class="premium-price">9€</div>
+        <div class="premium-period">/ Monat · jederzeit kündbar</div>
+        <ul class="premium-features">
+          <li><span class="check">✦</span> Vollständige Fundamentalanalysen</li>
+          <li><span class="check">✦</span> AAOIFI Scharia-Check im Detail</li>
+          <li><span class="check">✦</span> Früher Zugang zu neuen Analysen</li>
+          <li><span class="check">✦</span> Exklusive Aktien-Ideen</li>
+          <li><span class="check">✦</span> Purification Ratio Berechnungen</li>
+          <li><span class="check">✦</span> Community-Zugang</li>
+        </ul>
+        <a href="mailto:amanaaktien@gmail.com" class="btn-premium-full">Jetzt Mitglied werden →</a>
+        <p style="font-size:0.68rem; color:#555; text-align:center; margin-top:0.75rem;">☪️ Kein Riba · Kein Trick · Jederzeit kündbar</p>
+      </div>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="widget">
+      <div class="widget-head">📬 Kostenloser Newsletter</div>
+      <div class="widget-body">
+        <p class="newsletter-desc">Jede neue Halal-Analyse direkt in dein Postfach – kostenlos, kein Spam.</p>
+        <div class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="deine@email.de">
+          <button class="btn-newsletter">Anmelden →</button>
+          <p class="newsletter-note">Kostenlos · Jederzeit abbestellbar</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="widget">
+      <div class="widget-head">📱 Folge uns</div>
+      <div class="widget-body">
+        <ul class="social-list">
+          <li>
+            <a href="https://www.youtube.com/@AmanaAktien" target="_blank" class="social-item-row">
+              <div class="s-ico" style="background:#FF0000;">▶</div>
+              <div>
+                <div style="font-weight:700;">YouTube</div>
+                <div style="font-size:0.68rem; color:var(--muted);">123 Videos · 25 Abonnenten</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/amanaaktien" target="_blank" class="social-item-row">
+              <div class="s-ico" style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);">📸</div>
+              <div>
+                <div style="font-weight:700;">Instagram</div>
+                <div style="font-size:0.68rem; color:var(--muted);">40 Beiträge · 34 Follower</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@amanaaktien" target="_blank" class="social-item-row">
+              <div class="s-ico" style="background:#111; border:1px solid #333;">🎵</div>
+              <div>
+                <div style="font-weight:700;">TikTok</div>
+                <div style="font-size:0.68rem; color:var(--muted);">@amanaaktien</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PLAYLISTS -->
+    <div class="widget">
+      <div class="widget-head">📋 Playlists</div>
+      <div class="widget-body" style="padding:0.5rem 1.25rem;">
+        <div class="playlist-items">
+          <a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1dGA-_hN9pqznOboSSG6SXt" target="_blank" class="playlist-row">
+            <div class="pl-icon">📊</div>
+            <div>
+              <div class="pl-name">Halal ETF-Analysen</div>
+              <div class="pl-count">10 Videos</div>
+            </div>
+            <span class="pl-arrow">→</span>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1eX9hc6LVa2fwuXfv1VgJzt" target="_blank" class="playlist-row">
+            <div class="pl-icon">🇩🇪</div>
+            <div>
+              <div class="pl-name">Halal Aktien Deutschland</div>
+              <div class="pl-count">5 Videos</div>
+            </div>
+            <span class="pl-arrow">→</span>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1eoeBZ3R-mYc_cOo1QwKJDF" target="_blank" class="playlist-row">
+            <div class="pl-icon">🇺🇸</div>
+            <div>
+              <div class="pl-name">US Halal Qualitätsaktien</div>
+              <div class="pl-count">3 Videos</div>
+            </div>
+            <span class="pl-arrow">→</span>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1dJSdqS6OY7K0MNQdWUXpDy" target="_blank" class="playlist-row">
+            <div class="pl-icon">📚</div>
+            <div>
+              <div class="pl-name">Grundlagen Halal Investing</div>
+              <div class="pl-count">1 Video</div>
+            </div>
+            <span class="pl-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BROKERS -->
+    <div class="widget">
+      <div class="widget-head">🏦 Empfohlene Broker</div>
+      <div class="widget-body">
+        <p style="font-size:0.78rem; color:var(--text2); margin-bottom:1rem; line-height:1.6;">Diese Broker nutzen wir selbst – transparent und ohne Zusatzkosten für dich (Affiliate-Links):</p>
+        <div style="display:flex; flex-direction:column; gap:0.6rem;">
+          <a href="https://refnocode.trade.re/xhmwwbv6" target="_blank" style="display:flex; align-items:center; gap:0.75rem; padding:0.7rem 0.9rem; border:1px solid var(--border); border-radius:4px; font-size:0.82rem; font-weight:600; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
+            <span style="font-size:1.2rem;">🟢</span>
+            <div>
+              <div>Trade Republic</div>
+              <div style="font-size:0.68rem; color:var(--muted);">Mit Willkommensbonus</div>
+            </div>
+          </a>
+          <a href="https://de.scalable.capital/einladung/b6qrtw" target="_blank" style="display:flex; align-items:center; gap:0.75rem; padding:0.7rem 0.9rem; border:1px solid var(--border); border-radius:4px; font-size:0.82rem; font-weight:600; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
+            <span style="font-size:1.2rem;">📈</span>
+            <div>
+              <div>Scalable Capital</div>
+              <div style="font-size:0.68rem; color:var(--muted);">Einladungslink</div>
+            </div>
+          </a>
+        </div>
+        <p style="font-size:0.65rem; color:var(--muted); margin-top:0.75rem;">* Affiliate-Links. Für dich kostenlos, unterstützt den Kanal. 🙏</p>
+      </div>
+    </div>
+
+  </div><!-- end sidebar -->
+
+</div><!-- end main-wrap -->
+
+<!-- NEWSLETTER BIG -->
+<div class="newsletter-big">
+  <h2>200+ Muslimische Investoren lesen unseren Newsletter</h2>
+  <p>Jede neue Halal-Analyse direkt in dein Postfach – kostenlos, kein Spam, jederzeit abbestellbar.</p>
+  <div class="newsletter-big-form">
+    <input type="email" class="newsletter-big-input" placeholder="deine@email.de">
+    <button class="btn-nl-submit">Anmelden →</button>
+  </div>
+  <p class="nl-note">Kostenlos · Kein Spam · Jederzeit abbestellbar</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">Amana Aktien</div>
+        <div class="footer-brand-tagline">☪ Halal · Fundamental · Langfristig</div>
+        <p class="footer-about">Profi-Analysen für muslimische Investoren auf Deutsch. Scharia-konforme ETF- und Aktienanalysen nach AAOIFI-Standard – ehrlich, transparent und ohne Interessenkonflikte.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Analysen</h5>
+        <ul>
+          <li><a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1dGA-_hN9pqznOboSSG6SXt" target="_blank">ETF-Analysen</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1eX9hc6LVa2fwuXfv1VgJzt" target="_blank">Aktien Deutschland</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1eoeBZ3R-mYc_cOo1QwKJDF" target="_blank">Aktien USA</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLPjB3bQWeh1dJSdqS6OY7K0MNQdWUXpDy" target="_blank">Grundlagen</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Social Media</h5>
+        <ul>
+          <li><a href="https://www.youtube.com/@AmanaAktien" target="_blank">YouTube</a></li>
+          <li><a href="https://www.instagram.com/amanaaktien" target="_blank">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@amanaaktien" target="_blank">TikTok</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Rechtliches</h5>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Amana Aktien · Alle Rechte vorbehalten</p>
+      <p class="footer-disclaimer">⚠️ Keine Anlageberatung. Alle Inhalte dienen ausschließlich der Information und Bildung. Investitionen sind mit Risiken verbunden. Vergangene Renditen garantieren keine zukünftigen Ergebnisse. Bitte konsultiere einen qualifizierten Finanzberater.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
