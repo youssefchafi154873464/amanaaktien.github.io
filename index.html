@@ -496,20 +496,43 @@ footer {
 
 /* ── MOBILE ── */
 @media (max-width: 960px) {
-  .main-wrap { grid-template-columns:1fr; }
-  .sidebar { order:-1; }
+  .main-wrap { grid-template-columns:1fr; padding: 1.5rem 1rem; gap:1.5rem; }
+  .sidebar { order:2; }
   .featured-article { grid-template-columns:1fr; }
-  .featured-thumb { aspect-ratio:16/9; }
-  .footer-top { grid-template-columns:1fr 1fr; }
+  .featured-thumb { aspect-ratio:16/9; font-size:3rem; }
+  .featured-body { padding:1.25rem; }
+  .featured-body h3 { font-size:1.1rem; }
+  .footer-top { grid-template-columns:1fr 1fr; gap:1.5rem; }
   .topbar { display:none; }
   nav .nav-cats { display:none; }
+  nav .nav-right { gap:0.5rem; }
+  .btn-sm { padding:0.4rem 0.75rem; font-size:0.7rem; }
+  .hero-strip { padding:2.5rem 1.25rem 2rem; }
+  .hero-strip h1 { font-size:1.8rem; }
+  .hero-strip p { font-size:0.88rem; }
+  .stat-bar { padding:1rem; gap:1rem; flex-wrap:wrap; }
+  .full-section { padding:2rem 1rem; }
+  .newsletter-big { padding:2.5rem 1.25rem; }
+  .newsletter-big h2 { font-size:1.4rem; }
+  footer { padding:2rem 1.25rem 1.25rem; }
 }
 @media (max-width: 640px) {
-  .stat-bar { gap:1.5rem; }
+  .stat-bar { gap:1rem; }
   .stat-divider { display:none; }
+  .stat-num { font-size:1.1rem; }
   .newsletter-big-form { flex-direction:column; }
-  .footer-top { grid-template-columns:1fr; }
+  .footer-top { grid-template-columns:1fr; gap:1.5rem; }
   .categories-grid { grid-template-columns:1fr; }
+  .article-row { grid-template-columns:64px 1fr auto; gap:0.75rem; padding:0.75rem; }
+  .art-thumb-sm { width:64px; height:45px; font-size:1.2rem; }
+  .art-info h4 { font-size:0.8rem; }
+  .section-header { margin-top:1.5rem; }
+  .hero-btns { flex-direction:column; align-items:center; }
+  .btn-hero-primary, .btn-hero-secondary { width:100%; max-width:280px; text-align:center; }
+  .nav-right .btn-outline-dark { display:none; }
+  .brand-title { font-size:1.1rem; }
+  .halal-table { font-size:0.72rem; }
+  .halal-table th, .halal-table td { padding:0.5rem 0.6rem; }
 }
 </style>
 </head>
